@@ -1,3 +1,44 @@
-<h1>
-  {{title}}
-</h1>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>刮刮卡效果</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <style>
+      .content,
+      .cover {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -200px 0 0 -200px;
+      }
+      .content {
+        font-size: 48px;
+        line-height: 400px;
+        text-align: center;
+      }
+      h3 {
+        text-align: center;
+        line-height: 200px;
+      }
+    </style>
+  </head>
+
+  <body
+    style="
+      background-image: url('../assets/images/600.png');
+      background-repeat: no-repeat;
+      height: 699px;
+      background-position: 50% 200%;
+    "
+  >
+    <!-- <img src="../assets/images/600.png" /> -->
+
+    <div class="content">100,000</div>
+    <canvas id="cover" class="cover" width="400" height="400"></canvas>
+  </body>
+</html>
